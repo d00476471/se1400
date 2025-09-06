@@ -32,11 +32,11 @@ dt {
 
 .ut {
     color: #BA1C21;
+    font-weight: bold;
 }
 
 footer {
-    font-size: small;
-    padding: .70rem;
+    font-size: .70rem;
     font-style: italic;
     text-align: center;
 }
