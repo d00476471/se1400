@@ -167,7 +167,7 @@ main img {
     nav {
         grid-row: 2 / 3;
         grid-column: 1 / 5;
-        position: sticky;
+        position: static;
     }
 
     nav ul {
