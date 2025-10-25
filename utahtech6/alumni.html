@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Utah Tech University</title>
+    <title>Utah Tech University :: Alumni</title>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="style.css">
@@ -30,25 +30,25 @@
             <h3>Request Alumni Newsletter</h3>
             <p>Required information is marked with an asterisk (*).</p>
             <form method="post" action="https://kearl.net/se1400/mail.php">
-                <label for="FName">*First Name:</label>
-                <input name="FName" type="text" required>
+                <label for="myFName">*First Name:</label>
+                <input id="myFName" name="myFName" type="text" required>
 
-                <label for="LName">*Last Name:</label>
-                <input name="LName" type="text" required>
+                <label for="myLName">*Last Name:</label>
+                <input id="myLName" name="myLName" type="text" required>
 
                 <label for="myEmail">*E-mail:</label>
-                <input name="myEmail" type="email" required>
+                <input id="myEmail" name="myEmail" type="email" required>
 
                 <label for="myPhone">Phone:</label>
-                <input name="myPhone" type="tel">
+                <input id="myPhone" name="myPhone" type="tel">
 
                 <label for="myDate">Graduation Date:</label>
-                <input name="myDate" type="date">
+                <input id="myDate" name="myDate" type="date">
 
                 <label for="myComments">*Comments:</label>
-                <textarea rows="2" cols="20" name="myComments" required></textarea>
+                <textarea id="myComments" rows="2" cols="20" name="myComments" required></textarea>
 
-                <button id="mySubmit">Submit</button>
+                <input type="submit" id="mySubmit" value="Submit">
             </form>
         </main>
         <footer>
