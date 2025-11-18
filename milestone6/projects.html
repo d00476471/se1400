@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dason Janda - Projects</title>
+    <meta charset="utf-t">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="topnav">
+                <a href="#"><img src="images/Instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="images/LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="images/GitHub.svg" alt="GitHub"></a>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </header>
+
+        <div class="top">
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="projects-list">
+
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="images/project1-placeholder.png" alt="Screenshot of Project 1">
+                </div>
+                <div class="project-text">
+                    <h3>Quick Sort Algorithm</h3>
+                    <p>This project demonstrates the Quick Sort algorithm running directly in your browser using
+                        PyScript. Click the button to sort the list [3, 5, 1, 6, 5, 2, 9, 0, 4, 6] and see the result.
+                    </p>
+
+                    <button py-onClick="run_quicksort">Run Quick Sort</button>
+
+                    <p><strong>Quick Sort Result:</strong></p>
+                    <p id="quicksort-output">Awaiting button press...</p>
+
+                    <py-script>
+                        # 1. Quick Sort Implementation
+                        def quickSort(A, low, high):
+                        if (low >= high):      
+                        return
+                        lmgt = low + 1
+                        for i in range(low + 1, high + 1):
+                        if(A[i] < A[low]): A[i], A[lmgt]=A[lmgt], A[i] lmgt +=1 pivot=lmgt - 1 A[low],
+                            A[pivot]=A[pivot], A[low] quickSort(A, low, pivot - 1) quickSort(A, pivot + 1, high) # 2.
+                            Function to be called by the button def run_quicksort(): # Input list (only using list1 for
+                            Quick Sort as requested) list_to_sort=[3, 5, 1, 6, 5, 2, 9, 0, 4, 6] # Run Quick Sort
+                            quickSort(list_to_sort, 0, 9) # Format the output (removes the brackets from the list
+                            printout) result=str(list_to_sort)[1:-1] # Display the result to the HTML element with
+                            id="quicksort-output" display(result, target="quicksort-output" , append=False) </py-script>
+                </div>
+            </div>
+
+            <div class="project-item project-reverse">
+                <div class="project-image">
+                    <img src="images/project2-placeholder.png" alt="Screenshot of Project 2">
+                </div>
+                <div class="project-text">
+                    <h3>Project Title Two</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="images/project3-placeholder.png" alt="Screenshot of Project 3">
+                </div>
+                <div class="project-text">
+                    <h3>Project Title Three</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.</p>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            Copyright &copy; 2025 Dason Janda
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
