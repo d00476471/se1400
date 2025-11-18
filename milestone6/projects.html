@@ -39,7 +39,7 @@
                 </div>
                 <div class="project-text">
                     <h3>Quick Sort Algorithm</h3>
-                    <p>This project demonstrates the Quick Sort algorithm running directly in your browser using
+                    <p>This project demonstrates the Quick Sort algorithm running from an external Python file using
                         PyScript. Click the button to sort the list [3, 5, 1, 6, 5, 2, 9, 0, 4, 6] and see the result.
                     </p>
 
@@ -48,20 +48,8 @@
                     <p><strong>Quick Sort Result:</strong></p>
                     <p id="quicksort-output">Awaiting button press...</p>
 
-                    <py-script>
-                        # 1. Quick Sort Implementation
-                        def quickSort(A, low, high):
-                        if (low >= high):      
-                        return
-                        lmgt = low + 1
-                        for i in range(low + 1, high + 1):
-                        if(A[i] < A[low]): A[i], A[lmgt]=A[lmgt], A[i] lmgt +=1 pivot=lmgt - 1 A[low],
-                            A[pivot]=A[pivot], A[low] quickSort(A, low, pivot - 1) quickSort(A, pivot + 1, high) # 2.
-                            Function to be called by the button def run_quicksort(): # Input list (only using list1 for
-                            Quick Sort as requested) list_to_sort=[3, 5, 1, 6, 5, 2, 9, 0, 4, 6] # Run Quick Sort
-                            quickSort(list_to_sort, 0, 9) # Format the output (removes the brackets from the list
-                            printout) result=str(list_to_sort)[1:-1] # Display the result to the HTML element with
-                            id="quicksort-output" display(result, target="quicksort-output" , append=False) </py-script>
+                    <py-script src="./quicksort.py"></py-script>
+
                 </div>
             </div>
 
