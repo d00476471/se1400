@@ -16,9 +16,10 @@
     <div class="wrapper">
         <header>
             <div class="topnav">
-                <a href="#"><img src="images/Instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="images/LinkedIn.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="images/GitHub.svg" alt="GitHub"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram.svg"
+                        alt="Instagram"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="https://www.github.com/" target="_blank"><img src="images/GitHub.svg" alt="GitHub"></a>
                 <a href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="resume.html">Resume</a>
@@ -34,19 +35,21 @@
         <div class="projects-list">
 
             <div class="project-item">
-                <div class="project-image">
-                    <img src="images/project1-placeholder.png" alt="Screenshot of Project 1">
-                </div>
+                <pre>
+def bubbleSort(A):
+    F = len(A)
+    for i in range(F - 1):
+        for j in range(0, F - 1 - i):
+            if A[j] > A[j+1]:
+                A[j], A[j+1] = A[j+1], A[j]
+</pre>
                 <div class="project-text">
-                    <h3>Quick Sort Algorithm</h3>
-                    <p>This project demonstrates the Quick Sort algorithm running from an external Python file using
-                        PyScript. Click the button to sort the list [3, 5, 1, 6, 5, 2, 9, 0, 4, 6] and see the result.
+                    <h3>Bubble Sort Algorithm</h3>
+                    <p>This project demonstrates the Bubble Sort algorithm running from an external Python file using
+                        PyScript.
                     </p>
-
-                    <button py-onClick="run_quicksort">Run Quick Sort</button>
-
-                    <p><strong>Quick Sort Result:</strong></p>
-                    <p id="quicksort-output">Awaiting button press...</p>
+                    <p><strong>Bubble Sort Result:</strong></p>
+                    <p id="quicksort-output">Final output below</p>
 
                     <py-script src="quicksort.py"></py-script>
 
@@ -55,25 +58,23 @@
 
             <div class="project-item project-reverse">
                 <div class="project-image">
-                    <img src="images/project2-placeholder.png" alt="Screenshot of Project 2">
+                    <img src="images/SudokuSolver.png" alt="Screenshot of Project 3">
                 </div>
                 <div class="project-text">
-                    <h3>Project Title Two</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
+                    <h3>Sudoku Solver</h3>
+                    <p>This project was written in assembly and is given a sudoku board and progressively adds tik marks
+                        for all possible numbers each square can be and slowly fills in the board.</p>
                 </div>
             </div>
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="images/project3-placeholder.png" alt="Screenshot of Project 3">
+                    <img src="images/Music.jpg" alt="Screenshot of Project 2">
                 </div>
                 <div class="project-text">
-                    <h3>Project Title Three</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.</p>
+                    <h3>Musical Score Project</h3>
+                    <p>This C++ project involved constructing instruments from waveforms and being able to read and
+                        write sheet music for those instruments to play</p>
                 </div>
             </div>
 
