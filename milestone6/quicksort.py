@@ -1,3 +1,5 @@
+from pyscript import display
+
 def quickSort(A, low, high):
     if (low >= high):
         return
