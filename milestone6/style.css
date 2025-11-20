@@ -149,6 +149,25 @@ footer {
     padding: 0 20px;
 }
 
+.project-text a {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #4a90e2;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.project-text a:hover {
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+}
+
 .project-image img {
     width: 100%;
     max-height: 300px;
@@ -254,9 +273,16 @@ footer {
     color: white;
     font-family: Verdana;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .about-text {
@@ -268,13 +294,21 @@ footer {
 .about-image {
     flex: 1;
     height: 400px;
-    /* REPLACE THIS with a path to your photo */
-    background-image: url('images/your-photo.jpg');
+    background-image: url('images/About-Me-Image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 8px;
     border: 2px solid white;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.map-container h3 {
+    margin-bottom: 15px;
+    color: white;
 }
 
 .contact-container {
