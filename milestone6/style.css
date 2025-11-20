@@ -40,20 +40,32 @@ header .topnav {
 }
 
 .top {
+    padding-top: 150px;
     grid-column: 1 / -1;
     grid-row: 2 / 7;
     text-align: left;
     width: 50%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .top h1 {
+    margin: 0;
     float: left;
     color: white;
     font-size: 50px;
     font-family: Verdana;
     font-weight: bold;
-    padding: 100px 100px 100px;
+    line-height: 1.6;
+}
+
+.top h6 {
+    margin: 0;
+    float: left;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
     line-height: 1.6;
 }
 
@@ -313,7 +325,7 @@ footer {
 
 .contact-container {
     grid-column: 2 / -2;
-    grid-row: 8 / 13;
+    grid-row: 5 / 10;
     color: white;
     font-family: Verdana;
     display: flex;
