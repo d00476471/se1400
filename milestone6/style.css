@@ -421,11 +421,11 @@ footer {
         display: flex;
         justify-content: center;
         gap: 20px;
-        padding: 30px;
+        padding: 20px;
         float: none;
     }
 
-    header .topnav img {
+    header .topnav a:nth-child(-n+3) {
         display: none;
     }
 
