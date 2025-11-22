@@ -493,7 +493,7 @@ footer {
 
     .project-item {
         gap: 0px;
-        padding: 0px, 15px, 0px, 15px;
+        padding: 0px 15px 0px 15px;
     }
 
     .projects-list {
