@@ -82,6 +82,12 @@ header .topnav {
     font-family: Verdana;
     font-weight: bold;
     padding-left: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 
 .content .contentright {
@@ -146,6 +152,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .project-item.project-reverse {
@@ -197,7 +208,7 @@ footer {
     grid-row: 4 / 14;
     color: white;
     font-family: Verdana;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 8px;
     overflow-y: auto;
@@ -301,6 +312,12 @@ footer {
     flex: 1;
     font-weight: bold;
     line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 
 .about-image {
@@ -390,8 +407,8 @@ footer {
         text-align: center;
     }
 
-    .top h1 {
-        padding: 40px 20px;
+    .project-item {
+        margin: 15px;
     }
 }
 
@@ -420,7 +437,6 @@ footer {
 
     .top h1 {
         font-size: 30px;
-        padding: 40px 20px;
     }
 
     .content {
@@ -434,6 +450,15 @@ footer {
         background-size: contain;
         width: 100%;
         height: 200px;
+    }
+
+    .skills {
+        gap: 20px;
+    }
+
+    .skills a img {
+        height: 50px;
+        width: 50px;
     }
 
     .resume-contact-info {
@@ -454,5 +479,14 @@ footer {
     .about-image {
         width: 100%;
         height: 300px;
+    }
+
+    .resume-content {
+        font-size: 12px;
+    }
+
+    .project-item {
+        gap: 0px;
+        padding: 0px, 15px, 0px, 15px;
     }
 }
