@@ -473,7 +473,7 @@ footer {
 
     .about-content {
         flex-direction: column;
-        grid-row: 8 / 13;
+        grid-row: 4 / 9;
     }
 
     .about-image {
@@ -488,5 +488,9 @@ footer {
     .project-item {
         gap: 0px;
         padding: 0px, 15px, 0px, 15px;
+    }
+
+    .projects-list {
+        grid-row: 4 / 11;
     }
 }
