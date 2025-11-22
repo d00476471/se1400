@@ -418,15 +418,15 @@ footer {
     }
 
     header .topnav {
-        flex-wrap: wrap;
+        display: flex;
         justify-content: center;
-        gap: 10px;
-        padding: 20px;
+        gap: 20px;
+        padding: 30px;
+        float: none;
     }
 
     header .topnav img {
-        width: 30px;
-        height: 30px;
+        display: none;
     }
 
     .top {
